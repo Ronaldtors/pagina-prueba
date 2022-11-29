@@ -1,0 +1,76 @@
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --fuente-primaria: "Space Grotesk", sans-serif;
+    --subfuente: "Comfortaa", cursive;
+    --dockfuente: "Inter", sans-serif;
+  }
+.menul{
+    display:block;
+    padding: 5px 18px 5px 18px;
+    text-decoration: none;
+    color:white;
+}
+.nav
+
+{
+  /*position: absolute;*/
+  top:60px;
+  left:100%;
+  width:99%;
+}
+.logo{
+    padding:18px;
+    color:black;
+}
+.menuh{
+    /*text-align:center;*/
+    margin:20px;
+    list-style: none;
+    text-decoration: none;
+    padding:0;
+    font-family: var(--subfuente);
+}
+.menuh li{
+    display:inline-block;
+    
+}
+.menuh li a{
+    color:white;
+    padding:10px;
+    width:20px;
+    height: 20px;
+}
+.foots{
+  background-color: var(--dark);
+  padding:6% 25% 6% 45%;
+  color:white;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:100%;
+}
+.foots h6{
+    font-family: var(--fuente-primaria);
+    font-size: 13px;
+    color:white;
+  }

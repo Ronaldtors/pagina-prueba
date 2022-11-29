@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@1,300&family=Yanone+Kaffeesatz:wght@300&display=swap');
+@import url('extras.css');
+div,
+h1 {
+    text-align: center;
+}
+
+section {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sec {
+    background-image: url(../image/pc2.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 800px;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.sec1 {
+    background-image: url(../image/njman.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 1000px;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.sec2 {
+    background-image: url(../image/pc.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 1000px;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+/* ESTILOS */
+
+:root {
+    --color-fondo: hsl(135, 76%, 23%);
+    --color-primario: #3f8f70;
+    --color-secundario: #8251aa;
+    --color-claro: #B1D0E0;
+    --fuente-primaria: 'Poppins', sans-serif;
+    --color-blanco: whitesmoke;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--fuente-primaria);
+}
+
+h1 {
+    font-weight: 800;
+    font-size: calc(1rem + 2vw);
+    margin-bottom: 1.5rem;
+    text-shadow: #B1D0E0;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 5vw;
+    background-color: var(--color-claro);
+}
+
+
+/* header */
+
+header {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(var(--color-fondo), rgba(25, 54, 77, 0.493)), url("FondoFlex.jpg");
+    color: var(--color-blanco);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 8%;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: inherit;
+}
+
+.menu a {
+    margin-left: 2.5rem;
+}
+
+.menu a:hover {
+    color: var(--color-secundario);
+    transition: .5s ease-in-out;
+}
+
+.header-content {
+    width: 50%;
+    position: relative;
+    top: 20%;
+    left: 8%;
+}
+
+
+/* caracteristicas */
+
+.about-left,
+.about-mid,
+.about-right {
+    flex-basis: 33%;
+    padding: 1.5rem;
+}
+
+.btn,
+input[type="submit"] {
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+    padding: 8px 16px;
+    display: inline-block;
+    margin: 2rem 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.about-b {
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+}
+
+.about-b-left {
+    flex-basis: 40%;
+}
+
+.about-b-right {
+    flex-basis: 60%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row-card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+}
+
+.card {
+    padding: 2% 8%;
+    color: var(--color-fondo);
+    background-color: var(--color-claro);
+    margin: 1.6rem;
+    width: 40%;
+    text-align: center;
+}
+
+
+/* PROCESS */
+
+.process.row {
+    justify-content: center;
+}
+
+.process-content {
+    margin-top: 100px;
+}
+
+
+/*  MEDIA QUERIES */
+
+@media screen and (max-width:768px) {
+    .row {
+        flex-direction: column;
+    }
+    nav {
+        flex-direction: column;
+    }
+    .menu {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .menu a {
+        margin: 0;
+        display: block;
+        text-align: center;
+    }
+    .header-content {
+        width: 80%;
+        justify-content: flex-start;
+    }
+    .card {
+        width: 100%;
+    }
+    .progress-bar {
+        display: none;
+    }
+    .contact form input,
+    .contact textarea {
+        width: 100%;
+    }
+}
